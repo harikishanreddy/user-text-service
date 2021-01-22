@@ -19,7 +19,7 @@ NOTE:
 ## Services Exposed
 --------------------
  
-Dfiirent services are exposed for user oepartions 
+Dfiirent services are exposed for user operations 
 
 - ```/user/register``` : This service used to register new User
 - ```/user/authenticate```: This service used to verify the user is valid or not
@@ -36,7 +36,10 @@ Dfiirent services are exposed for user oepartions
 - One the user register or if user is already exist need to authenticate by accessing ```/user/authenticate``` service.
 - If the user is valid then it will generate the JWT token for the user and sends the same in response header as ```x-transaction-id```
 - The user has to use this token in request headers as ```x-transaction-id``` to access the resources.
-- After authentication user can now able to add the text using ```/user/add-text```. Ifd user want to update the existing text he can access  ```/user/update-text``` and to delete the existing text user can access ```/user/delete-text``` and to verify the text User can access ```/user/text```.
+- After authentication user can now able to add the text using ```/user/add-text```. 
+- If user want to update the existing text he can update by consuming  ```/user/update-text``` service.
+- To delete the existing text user can access ```/user/delete-text``` service.
+- To view the the user private text user can consume ```/user/text``` service.
 
 ## Sample Postman collection
 ----------------------------
