@@ -1,0 +1,9 @@
+{
+    "watch": ["src"],
+    "signal": "SIGHUP",
+    "ext": ".js,.json",
+    "ignore": [
+        "node_modules"
+    ],
+    "exec": "babel-node src/app.js"
+}
